@@ -1,0 +1,9 @@
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #198754 !important;
+}
+
+.my-account .nav-pills a:hover {
+    background-color: #198754 !important;
+    color: #fff;
+}

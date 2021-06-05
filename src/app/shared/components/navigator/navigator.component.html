@@ -1,0 +1,103 @@
+<body>
+  <!-- Skippy -->
+  <a id="skippy" class="visually-hidden visually-hidden-focusable u-skippy" href="#content">
+    <div class="container">
+      <span class="u-skiplink-text">Skip to main content</span>
+    </div>
+  </a>
+  <!-- End Skippy -->
+  <!-- Preload -->
+  <div id="loading" class="preloader">
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <!-- End Preload -->
+  <!-- Search START -->
+  <div class="px-search-full collapse bg-search p-3 z-index-999 position-fixed w-100 top-0" id="search-open">
+    <div class="container position-relative">
+      <div class="row vh-100 justify-content-center">
+        <div class="col-lg-8 p-search">
+          <h2 class="h1">
+            <span class="d-block text-white">Buscar</span>
+          </h2>
+          <form class="position-relative w-100">
+            <div class="mb-3 input-group">
+              <!-- Search input -->
+              <input class="form-control border-0 shadow-none" type="text" name="search"
+                placeholder="Marca, Modelo, Versión">
+              <!-- Search button -->
+              <button type="button" class="btn btn-success shadow-none">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Search button close START -->
+        <a class="search-close" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open"
+          aria-expanded="true">
+          <i class="bi bi-x p-0 lh-1"></i>
+        </a>
+        <!-- Search button close END -->
+      </div>
+    </div>
+  </div>
+  <!-- Search END -->
+  <!-- Header -->
+  <div class="header-height-bar"></div>
+  <header class="header-main bg-white header-light fixed-top header-height">
+    <!-- End Top Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" [routerLink]="['/']">
+          <img src="assets/static/img/logo.svg" title="" alt="">
+        </a>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="contact-us.html" class="nav-link">
+                Vender
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact-us.html" class="nav-link">
+                Comprar
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Menu -->
+        <div class="nav flex-nowrap align-items-center header-right">
+          <!-- Nav Search-->
+          <div class="nav-item">
+            <a class="nav-link collapsed" data-bs-toggle="collapse" href="javascript:void(0)"
+              data-bs-target="#search-open" aria-expanded="false">
+              <i class="bi bi-search"> </i>
+            </a>
+          </div>
+          <!-- Acount -->
+          <div class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" id="dropdown_myaccount" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-person-circle"> </i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end mt-2 shadow" aria-labelledby="dropdown_myaccount">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <a class="dropdown-item" href="sign-up.html">Register</a>
+              <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+              <a class="dropdown-item" href="my-account.html">My account</a>
+            </div>
+          </div>
+          <!-- Mobile Toggle -->
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- End Mobile Toggle -->
+        </div>
+      </div>
+    </nav>
+  </header>

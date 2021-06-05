@@ -1,0 +1,19 @@
+.size-nav{
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    top: 0;
+}
+
+.logo{
+    width: 120px;
+    height: 35px;    
+}
+
+.bg-search{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-search{
+    padding-top: 25vh;
+}

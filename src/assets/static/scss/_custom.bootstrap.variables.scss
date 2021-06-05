@@ -1,0 +1,236 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+$white:    $px-white !default;
+$gray-100: $px-gray-100; // light
+$gray-200: $px-gray-200; // border 1
+$gray-300: $px-gray-300; // border 2
+$gray-400: $px-gray-400;
+$gray-500: $px-gray-500;
+$gray-600: $px-gray-600;
+$gray-700: $px-gray-700;
+$gray-800: $px-gray-800;
+$gray-900: $px-gray-900;
+$px-black:    #000 !default;
+
+
+// fusv-disable
+$grays: (
+  "100": $px-gray-100,
+  "200": $px-gray-200,
+  "300": $px-gray-300,
+  "400": $px-gray-400,
+  "500": $px-gray-500,
+  "600": $px-gray-600,
+  "700": $px-gray-700,
+  "800": $px-gray-800,
+  "900": $px-gray-900
+) !default;
+// fusv-enable
+
+
+$blue:    $px-blue !default;
+$indigo:  $px-indigo !default;
+$purple:  $px-purple !default;
+$pink:    $px-pink !default;
+$red:     $px-red !default;
+$orange:  $px-orange !default;
+$yellow:  $px-yellow !default;
+$green:   $px-green !default;
+$teal:    $px-teal !default;
+$cyan:    $px-cyan !default;
+
+$colors: (
+  "blue":       $px-blue,
+  "indigo":     $px-indigo,
+  "purple":     $px-purple,
+  "pink":       $px-pink,
+  "red":        $px-red,
+  "orange":     $px-orange,
+  "yellow":     $px-yellow,
+  "green":      $px-green,
+  "teal":       $px-teal,
+  "cyan":       $px-cyan,
+  "white":      $px-white,
+  "gray":       $px-gray-600,
+  "gray-dark":  $px-gray-800
+);
+
+
+$primary:       $px-primary !default;
+$secondary:     $px-gray-600 !default;
+$success:       $px-green !default;
+$info:          $px-cyan !default;
+$warning:       $px-yellow !default;
+$danger:        $px-red !default;
+$light:         $px-gray-100 !default;
+$dark:          $px-gray-900 !default;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $px-primary,
+  "secondary":  $px-secondary,
+  "success":    $px-success,
+  "info":       $px-info,
+  "warning":    $px-warning,
+  "danger":     $px-danger,
+  "light":      $px-light,
+  "white":      $px-white,
+  "dark":       $px-dark
+) !default;
+// scss-docs-end theme-colors-map
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio:   $px-min-contrast-ratio !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+
+$enable-rounded:          $px-enable-rounded !default;
+$enable-negative-margins:     $px-enable-negative-margins !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-color:     $px-body-color !default;
+$line-height-base: $px-line-height-base !default;
+$font-weight-base:  $px-font-weight-base !default;
+
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-decoration:          $px-link-decoration !default;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$box-shadow:                  $px-box-shadow !default;
+$box-shadow-sm:               $px-box-shadow-sm !default;
+$box-shadow-lg:               $px-box-shadow-lg !default;
+
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:     $px-font-family-sans-serif !default;
+
+$font-size-base:              $px-font-size-base !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $px-font-size-sm !default;
+$font-size-lg:                $px-font-size-lg !default;
+
+$headings-font-family:       $px-headings-font-family !default;
+$headings-color:             $px-headings-color !default;
+$headings-font-weight:        $px-headings-font-weight !default;
+
+$lead-font-size:           $px-lead-font-size !default;
+$lead-font-weight:         $px-lead-font-weight !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-border-width:             $px-dropdown-border-width !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-focus-width:         $px-input-btn-focus-width !default;
+$input-btn-focus-color-opacity: $px-input-btn-focus-color-opacity !default;
+$input-btn-focus-color: $px-input-btn-focus-color !default;
+
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+$btn-focus-box-shadow:        $px-btn-focus-box-shadow !default;
+
+
+// Forms
+$input-focus-border-color:      $px-input-focus-border-color !default;
+
+
+// Navbar
+
+$navbar-padding-y:                  $px-navbar-padding-y !default;
+$navbar-nav-link-padding-x:         $px-navbar-nav-link-padding-x !default;
+
+$navbar-dark-color:                 $px-navbar-dark-color !default;
+$navbar-dark-hover-color:           $px-navbar-dark-hover-color !default;
+$navbar-dark-active-color:          $px-navbar-dark-active-color !default;
+$navbar-dark-disabled-color:        $px-navbar-dark-disabled-color !default;
+
+
+$navbar-light-color:                $px-navbar-light-color !default;
+$navbar-light-hover-color:          $px-navbar-light-hover-color !default;
+$navbar-light-active-color:         $px-navbar-light-active-color !default;
+$navbar-light-disabled-color:       $px-navbar-light-disabled-color !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$dropdown-font-size:                $px-dropdown-font-size !default;
+
+$dropdown-item-padding-y:           $px-dropdown-item-padding-y !default;
+$dropdown-item-padding-x:           $px-dropdown-item-padding-x !default;
+
+
+$dropdown-link-color:               $px-dropdown-link-color !default;
+$dropdown-link-hover-color:         $px-dropdown-link-hover-color !default;
+$dropdown-link-hover-bg:            $px-dropdown-link-hover-bg !default;
+
+$dropdown-link-active-color:        $px-dropdown-link-active-color !default;
+$dropdown-link-active-bg:           $px-dropdown-link-active-bg !default;
+
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-content-border-width:        $px-modal-content-border-width !default;
+$modal-header-border-width:      $px-modal-header-border-width !default;
+$modal-footer-border-width:      $px-modal-footer-border-width !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$btn-font-weight:               $px-btn-font-weight !default;
+
+$input-btn-padding-y:         $px-input-btn-padding-y !default;
+$input-btn-padding-x:         $px-input-btn-padding-x !default;
+
+$input-btn-padding-y-sm:      $px-input-btn-padding-y-sm !default;
+$input-btn-padding-x-sm:      $px-input-btn-padding-x-sm !default;
+$btn-line-height-sm:     $px-btn-line-height-sm !default;
+
+
+$input-btn-padding-y-lg:      $px-input-btn-padding-y-lg !default;
+$input-btn-padding-x-lg:      $px-input-btn-padding-x-lg !default;
+$input-btn-font-size-lg:    $px-input-btn-font-size-lg !default;
+
+$btn-font-weight:   $px-btn-font-weight !default;
+
+
+// Breadcrumbs
+$breadcrumb-bg:                     $px-breadcrumb-bg !default;
+$breadcrumb-divider-color:          $px-breadcrumb-divider-color !default;

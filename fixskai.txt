@@ -1,0 +1,19 @@
+**LANDING PAGE
+quitar letras
+hacer foto mas delgada
+y meter input
+
+search hacer el cuadro negro mas pequeño y meterlo en la imagen
+hacer search como popup
+
+**COMPRAR
+en comprar dejar el que a chapa le gusto
+
+**DETALLE
+quitar en detalle las bolitas de color
+quitar share para compartir y hacer mas grande los iconos y centrados
+moverlos alado de me gusta
+quitar comprar y poner contactar -quitar carrito
+
+*/*/falta registrar
+*/*/ pantalla para cuando olvido su contraseña

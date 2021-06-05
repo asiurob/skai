@@ -1,0 +1,358 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+$px-white:    #fff !default;
+$px-gray-100: #f7f8fa; // light
+$px-gray-200: #e9e9e9; // border 1
+$px-gray-300: #e5e5e5; // border 2
+$px-gray-400: #e5e5e5;
+$px-gray-500: #888888;
+$px-gray-600: #777777;
+$px-gray-700: #666666;
+$px-gray-800: #555555;
+$px-gray-900: #444444;
+$px-black:    #000 !default;
+
+
+// fusv-disable
+$grays: (
+  "100": $px-gray-100,
+  "200": $px-gray-200,
+  "300": $px-gray-300,
+  "400": $px-gray-400,
+  "500": $px-gray-500,
+  "600": $px-gray-600,
+  "700": $px-gray-700,
+  "800": $px-gray-800,
+  "900": $px-gray-900
+) !default;
+// fusv-enable
+
+
+$px-blue:    #7678ed !default;
+$px-indigo:  #6610f2 !default;
+$px-purple:  #6f42c1 !default;
+$px-pink:    #d63384 !default;
+$px-red:     #dc3545 !default;
+$px-orange:  #fd7e14 !default;
+$px-yellow:  #ffc107 !default;
+$px-green:   #198754 !default;
+$px-teal:    #20c997 !default;
+$px-cyan:    #0dcaf0 !default;
+
+$colors: (
+  "blue":       $px-blue,
+  "indigo":     $px-indigo,
+  "purple":     $px-purple,
+  "pink":       $px-pink,
+  "red":        $px-red,
+  "orange":     $px-orange,
+  "yellow":     $px-yellow,
+  "green":      $px-green,
+  "teal":       $px-teal,
+  "cyan":       $px-cyan,
+  "white":      $px-white,
+  "gray":       $px-gray-600,
+  "gray-dark":  $px-gray-800
+);
+
+
+$px-primary:       #5465ff !default;
+$px-secondary:     $px-gray-600 !default;
+$px-success:       $px-green !default;
+$px-info:          $px-cyan !default;
+$px-warning:       $px-yellow !default;
+$px-danger:        $px-red !default;
+$px-light:         $px-gray-100 !default;
+$px-dark:          #02010a !default;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $px-primary,
+  "secondary":  $px-secondary,
+  "success":    $px-success,
+  "info":       $px-info,
+  "warning":    $px-warning,
+  "danger":     $px-danger,
+  "light":      $px-light,
+  "white":      $px-white,
+  "black":      $px-black,
+  "dark":       $px-dark
+) !default;
+// scss-docs-end theme-colors-map
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$px-min-contrast-ratio:   1.8 !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+
+$px-enable-rounded:              false !default;
+
+$px-enable-negative-margins:     true !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 3.5,
+  9: $spacer * 4,
+  10: $spacer * 5,
+  11: $spacer * 6,
+  12: $spacer * 7,
+) !default;
+
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$px-body-color:                #8b919f !default;
+
+
+
+// Links
+//
+// Style anchor elements.
+
+$px-link-decoration:                         none !default;
+$px-line-height-base:     1.7 !default;
+$px-font-weight-base:     400 !default;
+
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$px-box-shadow:                  0 0.25rem 0.5625rem -0.0625rem rgba($px-black, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba($px-black, 0.05) !default;
+$px-box-shadow-sm:               0 0.125rem 0.3rem -0.0625rem rgba($px-black, 0.03), 0 0.275rem 0.75rem -0.0625rem rgba($px-black, 0.06) !default;
+$px-box-shadow-lg:               0 0.3rem 1.525rem -0.375rem rgba($px-black, 0.1) !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$px-font-family-sans-serif:      Poppins, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+
+$px-font-size-base:              0.93rem !default; // Assumes the browser default, typically `16px`
+$px-font-size-sm:                $px-font-size-base * .875 !default;
+$px-font-size-lg:                $px-font-size-base * 1.1 !default;
+
+
+$px-headings-font-family:        'Poppins', sans-serif !default;
+$px-headings-color:              $px-black !default;
+$px-headings-font-weight:        600 !default;
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.5rem,
+) !default;
+
+
+$px-lead-font-size:              $px-font-size-base * 1.15 !default;
+$px-lead-font-weight:            400 !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$px-dropdown-border-width:             0 !default;
+
+// Dropdown Size
+$px-dropdown-menu-md:         22rem !default;
+$px-dropdown-menu-lg:         35rem !default;
+$px-dropdown-menu-xl:         42rem !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$px-input-btn-focus-width:         0 !default;
+$px-input-btn-focus-color-opacity: 0 !default;
+$px-input-btn-focus-color: transparent !default;
+
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+$px-btn-focus-box-shadow:        0 0 0 0 transparent !default;
+
+
+// Forms
+$px-input-focus-border-color:      $px-black !default;
+
+
+// Navbar
+
+$px-navbar-padding-y:                  0 !default;
+$px-navbar-nav-link-padding-x:         .75rem !default;
+
+$px-header-link-font-size:    0.95rem !default;
+$px-header-link-transform:    none !default;
+$px-header-link-height:       60px !default;
+$px-header-font-weight:       500 !default;
+
+$px-navbar-dark-color:                 $px-white !default;
+$px-navbar-dark-hover-color:           rgba($px-white, .75) !default;
+$px-navbar-dark-active-color:          rgba($px-white, .85) !default;
+$px-navbar-dark-disabled-color:        rgba($px-white, .25) !default;
+
+
+$px-navbar-light-color:                $px-black !default;
+$px-navbar-light-hover-color:          $px-primary !default;
+$px-navbar-light-active-color:         $px-primary !default;
+$px-navbar-light-disabled-color:       rgba($px-black, .3) !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$px-dropdown-font-size:                0.95rem !default;
+
+$px-dropdown-item-padding-y:           0.65rem !default;
+$px-dropdown-item-padding-x:           1rem !default;
+
+$px-dropdown-link-color:               $px-gray-900 !default;
+$px-dropdown-link-hover-color:         $px-primary !default;
+$px-dropdown-link-hover-bg:            transparent !default;
+
+$px-dropdown-link-active-color:        $px-primary !default;
+$px-dropdown-link-active-bg:           transparent !default;
+
+
+
+// Section
+$px-section-padding-y:      3.75rem !default;
+$px-section-lg-padding-y:   3rem !default;
+$px-section-md-padding-y:   2rem !default;
+
+
+// Section Heading
+$px-section-heading-bottom-margin:    2.8125rem !default;
+
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$px-sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$px-sizes: map-merge(
+  (
+    5: 5%,
+    10: 10%,
+    15: 15%,
+    25: 25%,
+    30: 30%,
+    35: 35%,
+    40: 40%,
+    45: 45%,
+    50: 50%,
+    55: 55%,
+    60: 60%,
+    65: 65%,
+    75: 75%,
+    80: 80%,
+    85: 85%,
+    90: 90%,
+    95: 95%,
+    100: 100%,
+    auto: auto
+  ),
+  $px-sizes
+);
+
+
+
+
+// Modals
+
+// Padding applied to the modal body
+$px-modal-content-border-width:        0 !default;
+$px-modal-header-border-width:         1px !default;
+$px-modal-footer-border-width:         1px !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$px-btn-font-weight:               500 !default;
+
+$px-input-btn-padding-y:         .65rem !default;
+$px-input-btn-padding-x:         1.25rem !default;
+
+$px-input-btn-padding-y-sm:      .5rem !default;
+$px-input-btn-padding-x-sm:      1.25rem !default;
+$px-btn-line-height-sm:          1.2 !default;
+
+
+$px-input-btn-padding-y-lg:      1rem !default;
+$px-input-btn-padding-x-lg:      1.875rem !default;
+$px-input-btn-font-size-lg:   1rem !default;
+
+$px-btn-font-weight:             500 !default;
+
+// Breadcrumbs
+$px-breadcrumb-bg:                     transparent !default;
+$px-breadcrumb-divider-color:          $px-gray-600 !default;
+$px-breadcrumb-border-color:          $px-gray-300 !default;
+
+
+// Avatar
+$px-avatar-width:         3.125rem !default;
+$px-avatar-height:          $px-avatar-width !default;
+
+$px-avatar-width-xxl:        9rem !default;
+$px-avatar-height-xxl:       $px-avatar-width-xxl !default;
+
+$px-avatar-width-xl:        6rem !default;
+$px-avatar-height-xl:       $px-avatar-width-xl !default;
+
+$px-avatar-width-lg:        4rem !default;
+$px-avatar-height-lg:       $px-avatar-width-lg !default;
+
+$px-avatar-width-sm:        2.4375rem !default;
+$px-avatar-height-sm:       $px-avatar-width-sm !default;
+
+$px-avatar-font-size:       1rem !default;
+$px-avatar-font-size-lg:      1.25rem !default;
+$px-avatar-font-size-sm:      .75rem !default;
+
+$px-avatar-circle:          50% !default;
+$px-avatar-rounded:         .375rem !default;
+$px-avatar-rounded-sm:        .2rem !default;
+$px-avatar-rounded-lg:        .375rem !default;
+
+$px-avatar-group-margin:       -1.25rem !default;
+$px-avatar-child-size:        0.9rem !default;
+$px-avatar-child-border-color:    $px-white !default;
+$px-avatar-child-bottom:      - ($px-avatar-child-size / 2) !default;
