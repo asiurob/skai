@@ -1,0 +1,80 @@
+    <!-- Product Box -->
+    <div class="shop-top-bar d-flex pb-3">
+        <div class="layout-change">
+          <!-- Mobile Toggle -->
+          <button class="btn btn-sm w-auto px-3 small" type="button" data-bs-toggle="collapse"
+            data-bs-target="#shop_filter" aria-controls="shop_filter" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fs-4 lh-1 bi bi-justify-left me-2"></i> Filter
+          </button>
+        </div>
+      </div>
+
+<div class="shadow collapse" id="shop_filter">
+    <div class="p-4 mb-4">
+      <div class="row">
+
+        <!-- Categories -->
+        <div class="col-lg-4 col-sm-6 shop-sidebar-block my-2">
+          <div class="shop-sidebar-title">
+            <a class="h5" data-bs-toggle="collapse" href="#shop_categories" role="button" aria-expanded="true"
+              aria-controls="shop_categories">Categories <i class="bi bi-chevron-up"></i></a>
+          </div>
+          <categories [filters]="categories"></categories>
+        </div>
+        <!-- End Categories -->
+
+        <!-- Color -->
+        <div class="col-lg-4 col-sm-6 shop-sidebar-block my-2">
+          <div class="shop-sidebar-title">
+            <a class="h5" data-bs-toggle="collapse" href="#shop_Color" role="button" aria-expanded="true"
+              aria-controls="shop_Color">Color <i class="bi bi-chevron-up"></i></a>
+          </div>
+          <colors [colors]="color"></colors>
+        </div>
+        <!-- End Color -->
+        
+        <!-- Brands -->
+        <div class="col-lg-4 col-sm-6 shop-sidebar-block my-2">
+          <div class="shop-sidebar-title">
+            <a class="h5" data-bs-toggle="collapse" href="#shop_brand" role="button" aria-expanded="true"
+              aria-controls="shop_brand">Tipo de venta <i class="bi bi-chevron-up"></i></a>
+          </div>
+          <type-sale [typeSale]="tipoDeVenta"></type-sale>
+        </div>
+        <!-- End Brands -->
+        <!-- Brands -->
+        <div class="shop-sidebar-title">
+          <a class="h5" data-bs-toggle="collapse" href="#shop_price" role="button" aria-expanded="true"
+            aria-controls="shop_price">Price <i class="bi bi-chevron-up"></i></a>
+        </div>
+        <div class="shop-sidebar-list collapse show" id="shop_price">
+          <div class="d-flex align-items-center pt-3">
+            <!-- Input -->
+            <input type="number" class="form-control form-control-sm" placeholder="$10.00" min="10">
+            <!-- Divider -->
+            <div class="text-gray-350 mx-2">‒</div>
+            <!-- Input -->
+            <input type="number" class="form-control form-control-sm" placeholder="$350.00" max="9999999">
+          </div>
+        </div>
+
+        <div class="shop-sidebar-title mt-4">
+          <a class="h5" data-bs-toggle="collapse" href="#shop_km" role="button" aria-expanded="true"
+            aria-controls="km">Km <i class="bi bi-chevron-up"></i></a>
+        </div>
+        <div class="shop-sidebar-list collapse show" id="km">
+          <div class="d-flex align-items-center pt-3">
+            <!-- Input -->
+            <input type="number" class="form-control form-control-sm" placeholder="10,000 Km" min="10">
+            <!-- Divider -->
+            <div class="text-gray-350 mx-2">‒</div>
+            <!-- Input -->
+            <input type="number" class="form-control form-control-sm" placeholder="100,000 Km">
+          </div>
+        </div>
+        <!-- End Brands -->
+      </div>
+    </div>
+  </div>
+  <!-- End Sidebar -->

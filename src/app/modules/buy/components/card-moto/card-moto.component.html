@@ -1,0 +1,44 @@
+<div class="row g-3">
+  <div class="col-sm-6 col-lg-3" *ngFor="let moto of motos">
+    <div class="product-card-1">
+      <div class="product-card-image">
+        <div class="product-action">
+          <a href="#" class="btn btn-outline-primary">
+            <i class="bi bi-heart"></i>
+          </a>
+          <a href="#" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left-right"></i>
+          </a>
+        </div>
+        <div class="product-media">
+          <a href="#">
+            <img class="img-fluid img-cat" src="{{moto.img}}">
+          </a>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <h6 class="product-title text-start">
+          <span>{{moto.marca}}</span>
+        </h6>
+        <div class="product-meta small text-start">
+          <span>{{moto.version}}</span> | <span>{{moto.modelo}}</span>
+        </div>
+        <div class="product-meta small text-start mt-4">
+          <span>{{moto.mileage}} Km</span> | <span>{{moto.displacement}} CC</span>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="product-meta small text-start fw-bold">
+              <span>{{moto.location}}</span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="product-price">
+              <span class=" text-secondary fw-bold fs-6 text-end">{{moto.price | currency}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

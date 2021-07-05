@@ -1,0 +1,10 @@
+<div class="shop-sidebar-list collapse show" id="shop_brand">
+  <ul>
+    <li class="custom-checkbox" *ngFor="let type of typeSale">
+      <input class="custom-control-input" [id]="type.typeCheckbox" type="checkbox">
+      <label class="custom-control-label" [for]="type.typeCheckbox">
+        {{type.name}}
+      </label>
+    </li>
+  </ul>
+</div>

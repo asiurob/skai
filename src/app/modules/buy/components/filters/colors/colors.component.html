@@ -1,0 +1,12 @@
+<div class="shop-sidebar-list collapse show" id="shop_Color">
+  <ul>
+    <li class="custom-checkbox checkbox-color" *ngFor="let color of colors">
+      <input class="custom-control-input" [id]="color.idCheckbox" type="checkbox">
+      <label class="custom-control-label" [style]="color.hexadecimal" [for]="color.idCheckbox">
+        <span class="text-body">
+          {{color.name}}
+        </span>
+      </label>
+    </li>
+  </ul>
+</div>

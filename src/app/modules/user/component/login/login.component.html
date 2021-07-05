@@ -27,31 +27,30 @@
           <div class="card-body">
             <form class="">
               <div class="form-group mb-3">
-                <label for="email_1" class="form-label">Email<span class="text-danger">*</span></label>
-                <input type="text" id="email_1" class="form-control" placeholder="E-mail">
+                <label for="email_1" class="form-label">Correo electrónico<span class="text-danger">*</span></label>
+                <input type="text" id="email_1" class="form-control" placeholder="ejemplo@ejemplo.com">
               </div>
               <div class="form-group mb-3">
                 <div class="row align-items-center">
-                  <label class="form-label col" for="exampleInputPassword01">Password<span
+                  <label class="form-label col" for="exampleInputPassword01">contraseña?<span
                       class="text-danger">*</span></label>
-                  <span class="col ms-auto small text-end"><a href="#!">Forgot password?</a></span>
+                  <span class="col ms-auto small text-end"><a [routerLink]="['/user/recuperar-contrasena']">Olvidaste tu contraseña?</a></span>
                 </div>
                 <input type="password" class="form-control" id="exampleInputPassword01" placeholder="*********">
               </div>
               <!-- Checkbox -->
               <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked />
-                <label class="form-check-label" for="form2Example3"> Remember me </label>
+                <label class="form-check-label" for="form2Example3"> Recordarme </label>
               </div>
               <div class="form-group text-center">
                 <button type="submit" class="btn btn-success w-100">
-                  Log in
+                  Entrar
                 </button>
               </div>
             </form>
-
             <div class="pt-4 text-center">
-              <span class="text-muted">Don't have an account? <a href="sign-up.html">Signup here</a></span>
+              <span class="text-muted">No tienes una cuenta todavia? <a [routerLink]="['/user/registrarse']">Registrate aqui</a></span>
             </div>
           </div>
         </div>

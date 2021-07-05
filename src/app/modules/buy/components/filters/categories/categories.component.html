@@ -1,0 +1,16 @@
+<div class="shop-category-list collapse show" id="shop_categories">
+  <ul class="nav flex-column" *ngFor="let filter of filters">
+    <li class="nav-item">
+      <a class="nav-link ">{{filter.name}} <span>({{quantity(filter.id)}})</span></a>
+      <a data-bs-toggle="collapse" [href]="'#'+filter.idCollapse" role="button" aria-expanded="false"
+        aria-controls="shop_cat_1" class="s-icon"></a>
+      <div class="collapse" [id]="filter.idCollapse">
+        <ul class="nav nav-pills flex-column nav-hierarchy">
+          <li class="nav-item" *ngFor="let f of filter.data">
+            <a href="#" class="nav-link ">{{f.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>

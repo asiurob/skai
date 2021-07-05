@@ -13,7 +13,7 @@ const routes: Routes = [
         .then(m => m.LandingPageModule)
     },
     {
-      path: 'comprar',
+      path: 'buy',
       loadChildren: () => import('@modules/buy/buy.module')
         .then(m => m.BuyModule)
     },
@@ -26,6 +26,11 @@ const routes: Routes = [
       path: 'user',
       loadChildren: () => import('@modules/user/user.module')
         .then(m => m.UserModule)
+    },
+    {
+      path: 'sell',
+      loadChildren: () => import('@modules/sell/sell.module')
+        .then(m => m.SellModule)
     },
 ]}
 ]

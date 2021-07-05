@@ -19,207 +19,47 @@
 <section class="product-details py-6">
   <div class="container">
     <div class="row">
-      <!-- Product Gallery -->
-      <div class="col-lg-6 lightbox-gallery product-gallery">
-        <div class="slick-carousel product-slider" data-slick='{
-                                "slidesToShow": 1,
-                                "slidesToScroll": 1,
-                                "arrows": false,
-                                "fade": true,
-                                "asNavFor": ".product-thumb"
-                            }'>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div>
-            <a class="gallery-link" href="assets/static/img/moto1.jpg"><i class="bi bi-arrows-fullscreen"></i></a>
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-        </div>
-        <div class="slick-carousel product-thumb mt-3" data-slick='{
-                                "slidesToShow": 5,
-                                "slidesToScroll": 1,
-                                "asNavFor": ".product-slider",
-                                "centerMode": true,
-                                "focusOnSelect": true,
-                                "centerPadding": "40px",
-                                "responsive": [
-                                    {
-                                        "breakpoint":1200,
-                                        "settings":{
-                                            "slidesToShow": 5
-                                        }
-                                    },
-                                    {
-                                        "breakpoint":992,
-                                        "settings":{
-                                            "slidesToShow": 4
-                                        }
-                                    },
-                                    {
-                                        "breakpoint":768,
-                                        "settings":{
-                                            "slidesToShow": 4
-                                        }
-                                    },
-                                    {
-                                        "breakpoint":576,
-                                        "settings":{
-                                            "slidesToShow": 3
-                                        }
-                                    }
-                                ]
-                            }'>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-          <div class="pe-2">
-            <img src="assets/static/img/moto1.jpg" class="img-fluid" title="" alt="">
-          </div>
-        </div>
+      <div class="col-lg-6">
+        <carousel></carousel>
       </div>
-      <!-- End Product Gallery -->
-      <!-- Product Details -->
-      <div class="col-lg-6 ps-lg-5">
+
+
+      <div class="col-lg-6 ps-lg-5 mt-4">
         <div class="product-detail pt-lg-0">
 
-          <div class="mb-4 mx-2 ">
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Marca</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">Honda</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Modelo</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">2021</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Versión</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">touring</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Precio</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">$70,000.00</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Kilometraje</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">10,400 Km</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Cilindrada</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">1150 CC</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-dark p-1">Ubicación</span>
-              </div>
-              <div class="col-6 p-0">
-                <span class="list-group-item list-group-item-action list-group-item-secondary p-1">Ciudad de México</span>
-              </div>
-            </div>
-          </div>
+          <motorcycle [motos]="motos"></motorcycle>
 
-
-          <div class="product-description">
-            <span class="fs-4 text-dark">Comentarios </span>
-            <p>Tiene un pequeño detalle en el asiento</p>
-          </div>
-          <div class="count-down count-down-02 mb-3" data-countdown="January 01, 2022 15:00:00"></div>
-          <div class="product-price fs-3 fw-500 mb-2">
-            <span class="text-secondary">$70,000.<small>00</small></span>
-          </div>
-          <div class="product-detail-actions d-flex flex-wrap pt-3">
-
-            <div class="cart-button mb-3 d-flex">
-              <button class="btn btn-success me-3">
-               Contactar
+          <div class="row">
+            <div class="col-sm-3 col-12">
+              <button class="btn btn-success m-2 w-100">
+                Contactar
               </button>
-              <button class="btn btn-outline-dark me-3">
+            </div>
+            <div class="col-sm-2 col-3">
+              <button class="btn btn-outline-dark m-2">
                 <i class="bi bi-heart"></i>
               </button>
-              <button class="btn btn-outline-dark me-3">
+            </div>
+            <div class="col-sm-2 col-3">
+              <button class="btn btn-outline-dark m-2">
                 <i class="bi bi-facebook"></i>
               </button>
-              <button class="btn btn-outline-dark me-3">
+            </div>
+            <div class="col-sm-2 col-3">
+
+              <button class="btn btn-outline-dark m-2">
                 <i class="bi bi-twitter"></i>
               </button>
-              <button class="btn btn-outline-dark me-3">
+            </div>
+            <div class="col-sm-2 col-3">
+
+              <button class="btn btn-outline-dark m-2">
                 <i class="bi bi-instagram"></i>
               </button>
-
             </div>
           </div>
         </div>
       </div>
-      <!-- End Product Details -->
     </div>
   </div>
 </section>
-<!-- End Product Details -->
-<!-- Product Tabs -->
