@@ -4,18 +4,20 @@ import { CommonModule } from '@angular/common';
 import { DetailRoutingModule } from './detail-routing.module';
 import { DetailComponent } from './detail.component';
 import { MotorcycleComponent } from './motorcycle/motorcycle.component';
-import { CarouselComponent } from './carousel/carousel.component';
 
+import { OwlModule } from 'ngx-owl-carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
     DetailComponent,
-    MotorcycleComponent,
-    CarouselComponent
+    MotorcycleComponent
   ],
   imports: [
     CommonModule,
-    DetailRoutingModule
+    DetailRoutingModule,
+    CarouselModule
+    
   ]
 })
 export class DetailModule { }

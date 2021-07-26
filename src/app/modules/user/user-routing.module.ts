@@ -13,17 +13,17 @@ const routes: Routes = [
         .then(m => m.LoginModule)
     },
     {
-      path: 'mi-cuenta',
+      path: 'my-account',
       loadChildren: () => import('@modules/user/component/my-account/my-account.module')
         .then(m => m.MyAccountModule)
     },
     {
-      path: 'registrarse',
+      path: 'check-in',
       loadChildren: () => import('@modules/user/component/register/register.module')
         .then(m => m.RegisterModule)
     },
     {
-      path: 'recuperar-contrasena',
+      path: 'recover-password',
       loadChildren: () => import('@modules/user/component/forgot-password/forgot-password.module')
         .then(m => m.ForgotPasswordModule)
     },

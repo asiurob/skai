@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { motorcycle } from 'shared/interface/motorcycle.interface';
 
 @Component({
@@ -49,9 +50,13 @@ export class CardMotoComponent implements OnInit {
     price:           135000,
   },
 ]
-  constructor() { }
+  constructor( private _router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  detailMoto(){
+    this._router.navigateByUrl('detail')
   }
 
 }

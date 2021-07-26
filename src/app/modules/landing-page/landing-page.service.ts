@@ -9,22 +9,22 @@ export class LandingPageService {
   _dataCards: DataCard[] = [
     {
     img: 'assets/static/img/imagen1.jpg',
-    title: 'NEW IN',
-    subtitle: 'WOMEN’S',
+    title: 'Nuevo',
+    subtitle: 'Motos',
     link: '#',
     textLink: 'Entrar',
   },
   {
     img: 'assets/static/img/imagen2.jpg',
-    title: 'NEW IN',
-    subtitle: 'MAN’S',
+    title: 'Nuevo',
+    subtitle: 'Motos',
     link: '#',
     textLink: 'Entrar',
   },
   {
     img: 'assets/static/img/imagen3.jpg',
-    title: 'NEW IN',
-    subtitle: 'WOMEN’S',
+    title: 'Nuevo',
+    subtitle: 'Motos',
     link: '#',
     textLink: 'Entrar',
   },

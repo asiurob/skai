@@ -132,27 +132,27 @@ export class FiltersService {
   _colors: Color[] = [
     {
       hexadecimal: 'color: #1F45FC',
-      name: 'Royal Blue',
+      name: 'Azul',
       idCheckbox: 'colorsidebar1'
     },
     {
       hexadecimal: 'color: #FCD71E',
-      name: 'Yellow',
+      name: 'Amarillo',
       idCheckbox: 'colorsidebar2'
     },
     {
       hexadecimal: 'color: #000',
-      name: 'Black',
+      name: 'Negro',
       idCheckbox: 'colorsidebar3'
     },
     {
       hexadecimal: 'color: #f73636',
-      name: 'Red',
+      name: 'Rojo',
       idCheckbox: 'colorsidebar4'
     },
     {
       hexadecimal: 'color: #17a2b8',
-      name: 'Cyan',
+      name: 'Cian',
       idCheckbox: 'colorsidebar5'
     },
   ]
