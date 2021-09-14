@@ -20,8 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

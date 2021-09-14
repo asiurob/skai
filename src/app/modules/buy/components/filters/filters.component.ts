@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FiltersService } from './filters.service';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'filters',
@@ -20,8 +21,20 @@ export class FiltersComponent implements OnInit {
     return this.filtersService.tipoDeVenta
   }
 
-  constructor( private filtersService: FiltersService) { }
+
+  constructor( 
+    private filtersService: FiltersService,
+    public dialogRef: MatDialogRef<FiltersComponent>,
+    ) { }
 
   ngOnInit(): void {
+  }
+
+  formatLabel(value: number) {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'k';
+    }
+
+    return value;
   }
 }

@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { MyAccountRoutingModule } from './my-account-routing.module';
 import { MyAccountComponent } from './my-account.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import { MyAccountComponent } from './my-account.component';
   ],
   imports: [
     CommonModule,
-    MyAccountRoutingModule
+    MyAccountRoutingModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatFormFieldModule,
   ]
 })
 export class MyAccountModule { }

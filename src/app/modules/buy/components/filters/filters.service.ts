@@ -11,26 +11,86 @@ export class FiltersService {
   _categories: Categories[] = [{
     id: 0,
       name: 'Marca',
+      formControl: 'formMarca',
       data: [{
-          name: 'honda'
+          name: 'Harley Davidson',
+          infoImage: 'assets/svg/harley.png'
         },
         {
-          name: 'Harley Davidson'
+          name: 'Ducati',
+          infoImage: 'assets/svg/ducati.png'
         },
         {
-          name: 'Yamaha'
+          name: 'BMW',
+          infoImage: 'assets/svg/bmw.png'
         },
         {
-          name: 'BMW'
+          name: 'Honda',
+          infoImage: 'assets/svg/honda.png'
         },
         {
-          name: 'Keeway'
+          name: 'Aprilia',
+          infoImage: 'assets/svg/aprilia.png'
         },
         {
-          name: 'Ducari'
+          name: 'Yamaha',
+          infoImage: 'assets/svg/yamaha.png'
         },
         {
-          name: 'Indian MI'
+          name: 'Kawasaki',
+          infoImage: 'assets/svg/kawasaki.png'
+        },
+        {
+          name: 'Suzuki',
+          infoImage: 'assets/svg/suzuki.png'
+        },
+        {
+          name: 'Indian',
+          infoImage: 'assets/svg/indian.png'
+        },
+        {
+          name: 'Keeway',
+          infoImage: 'assets/svg/keeway.png'
+        },
+        {
+          name: 'KTM',
+          infoImage: 'assets/svg/ktm.png'
+        },
+        {
+          name: 'Triumph',
+          infoImage: 'assets/svg/triumph.png'
+        },
+        {
+          name: 'Izuka',
+          infoImage: 'assets/svg/izuka.png'
+        },
+        {
+          name: 'MV Agusta',
+          infoImage: 'assets/svg/mv-agusta.png'
+        },
+        {
+          name: 'Italika',
+          infoImage: 'assets/svg/italika.png'
+        },
+        {
+          name: 'Bajaj',
+          infoImage: 'assets/svg/bajaj.png'
+        },
+        {
+          name: 'Vento',
+          infoImage: 'assets/svg/vento.png'
+        },
+        {
+          name: 'Vespa',
+          infoImage: 'assets/svg/vespa.png'
+        },
+        {
+          name: 'Victoria',
+          infoImage: 'assets/svg/victoria.png'
+        },
+        {
+          name: 'AKT',
+          infoImage: 'assets/svg/akt.png'
         },
       ],
       idCollapse: 'shop_cat_1'
@@ -38,6 +98,7 @@ export class FiltersService {
     {
       id: 1,
       name: 'Modelo',
+      formControl: 'formModelo',
       data: [{
           name: '2021'
         },
@@ -81,6 +142,7 @@ export class FiltersService {
     {
       id: 2,
       name: 'Versión',
+      formControl: 'formVersion',
       data: [{
           name: 'Touring'
         },
@@ -93,17 +155,134 @@ export class FiltersService {
     {
       id: 3,
       name: 'Ubicación',
+      formControl: 'formUbicacion',
       data: [{
-          name: 'CDMX'
+          name: 'Aguascalientes',
+          infoExtra: 'AGU'
         },
         {
-          name: 'TIJ'
+          name: 'Baja California',
+          infoExtra: 'BCN'
         },
         {
-          name: 'GDL'
+          name: 'Baja California Sur',
+          infoExtra: 'BCS'
         },
         {
-          name: 'EDO'
+          name: 'Campeche',
+          infoExtra: 'CAM'
+        },
+        {
+          name: 'Chiapas',
+          infoExtra: 'CHP'
+        },
+        {
+          name: 'Chihuahua',
+          infoExtra: 'CHH'
+        },
+        {
+          name: 'Ciudad de México',
+          infoExtra: 'CDMX'
+        },
+        {
+          name: 'Coahuila',
+          infoExtra: 'COA'
+        },
+        {
+          name: 'Colima',
+          infoExtra: 'COL'
+        },
+        {
+          name: 'Durango',
+          infoExtra: 'DUR'
+        },
+        {
+          name: 'Guanajuato',
+          infoExtra: 'GUA'
+        },
+        {
+          name: 'Guerrero',
+          infoExtra: 'GRO'
+        },
+        {
+          name: 'Hidalgo',
+          infoExtra: 'HID'
+        },
+        {
+          name: 'Jalisco',
+          infoExtra: 'JAL'
+        },
+        {
+          name: 'Estado de México',
+          infoExtra: 'EDO MEX'
+        },
+        {
+          name: 'Michoacan',
+          infoExtra: 'MIC'
+        },
+        {
+          name: 'Morelos',
+          infoExtra: 'MOR'
+        },
+        {
+          name: 'Nayarit',
+          infoExtra: 'NAY'
+        },
+        {
+          name: 'Nuevo León',
+          infoExtra: 'NLE'
+        },
+        {
+          name: 'Oaxaca',
+          infoExtra: 'OAX'
+        },
+        {
+          name: 'Puebla',
+          infoExtra: 'PUE'
+        },
+        {
+          name: 'Querétaro',
+          infoExtra: 'QUE'
+        },
+        {
+          name: 'Quintana Roo',
+          infoExtra: 'ROO'
+        },
+        {
+          name: 'San Luis Potosi',
+          infoExtra: 'SLP'
+        },
+        {
+          name: 'Sinaloa',
+          infoExtra: 'SIN'
+        },
+        {
+          name: 'Sonora',
+          infoExtra: 'SON'
+        },
+        {
+          name: 'Tabasco',
+          infoExtra: 'TAB'
+        },
+        {
+          name: 'Tamaulipas',
+          infoExtra: 'TAM'
+        },
+        {
+          name: 'Tlaxcala',
+          infoExtra: 'TLA'
+        },
+        {
+          name: 'Veracruz',
+          infoExtra: 'VER'
+        },
+        {
+          name: 'Yucatán',
+          infoExtra: 'YUC'
+        },
+        {
+          name: 'Zacatecas',
+          infoExtra: 'ZAC'
         },
       ],
       idCollapse: 'shop_cat_4'
@@ -111,6 +290,7 @@ export class FiltersService {
     {
       id: 4,
       name: 'Cilindrada',
+      formControl: 'formCilindrada',
       data: [{
         name: '150CC'
         },

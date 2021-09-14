@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BuyComponent } from './buy.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: BuyComponent
+    component: BuyComponent,
+    children: [
+      {
+        path: 'filters',
+        component: FiltersComponent
+      }
+    ]
   }
 ];
 

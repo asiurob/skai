@@ -6,10 +6,22 @@
 
 <section class="py-6">
   <div class="container">
-    
-    <filters></filters>
 
-    <card-moto></card-moto>
+    <!-- Product Box -->
+    <div class="shop-top-bar d-flex pb-3">
+      <div class="layout-change">
+        <!-- Mobile Toggle -->
+        <button class="btn btn-sm w-auto px-3 small" type="button" (click)="filters()">
+          <i class="fs-4 lh-1 bi bi-justify-left me-2"></i> Filtros
+        </button>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-sm-12 col-lg-3" *ngFor="let moto of motos">
+      <card-moto  [moto]="moto"></card-moto>
+    </div>
+  </div>
 
     <div class="shop-bottom-bar d-flex align-items-center pt-3 mt-3">
       <div>Showing: 1 - 12 of 17</div>

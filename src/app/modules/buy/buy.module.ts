@@ -9,8 +9,12 @@ import { CategoriesComponent } from './components/filters/categories/categories.
 import { ColorsComponent } from './components/filters/colors/colors.component';
 import { TypeSaleComponent } from './components/filters/type-sale/type-sale.component';
 import { ShortcutModule } from '@components/shortcut/shortcut.module';
-
-
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,13 @@ import { ShortcutModule } from '@components/shortcut/shortcut.module';
     CommonModule,
     BuyRoutingModule,
     ShortcutModule,
-
+    MatDialogModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSliderModule
+    
   ]
 })
 export class BuyModule { }

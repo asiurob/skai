@@ -1,12 +1,20 @@
-<div class="shop-sidebar-list collapse show" id="shop_Color">
-  <ul>
-    <li class="custom-checkbox checkbox-color" *ngFor="let color of colors">
-      <input class="custom-control-input" [id]="color.idCheckbox" type="checkbox">
-      <label class="custom-control-label" [style]="color.hexadecimal" [for]="color.idCheckbox">
-        <span class="text-body">
-          {{color.name}}
-        </span>
-      </label>
-    </li>
-  </ul>
+<div class="row">
+  <div class="col-12">
+    <div class="shop-category-list collapse show" id="shop_Color">
+      <ul class="nav flex-column">
+        <form [formGroup]="formColor">
+          <mat-form-field appearance="outline">
+            <input matInput aria-label="State" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let color of colors" [value]="color.name">
+                <label [style]="color.hexadecimal" [for]="color.idCheckbox">
+                  <span class="fw-bold"> {{color.name}}</span>
+                </label>
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+      </ul>
+    </div>
+  </div>
 </div>
